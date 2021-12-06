@@ -1,0 +1,66 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+(() => {
+var exports = {};
+exports.id = "pages/register";
+exports.ids = ["pages/register"];
+exports.modules = {
+
+/***/ "./pages/register.js":
+/*!***************************!*\
+  !*** ./pages/register.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ \"react/jsx-runtime\");\n/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ \"axios\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\nconst Register = ()=>{\n    const { 0: name , 1: setName  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(\"Ryan\");\n    const { 0: email , 1: setEmail  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(\"ryan@gmail.com\");\n    const { 0: password , 1: setPassword  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(\"rrrrrr\");\n    const handleSubmit = async (e)=>{\n        e.preventDefault();\n        // console.table({ name, email, password });\n        const { data  } = await axios__WEBPACK_IMPORTED_MODULE_2___default().post(`http://localhost:8000/api/register`, {\n            name,\n            email,\n            password\n        });\n        console.log(\"REGISTER RESPONSE\", data);\n    };\n    return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n        children: [\n            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(\"h1\", {\n                className: \"jumbotron text-center bg-primary square\",\n                __source: {\n                    fileName: \"/Users/goutham/Projects/lms/client/pages/register.js\",\n                    lineNumber: 22,\n                    columnNumber: 7\n                },\n                __self: undefined,\n                children: \"Register\"\n            }),\n            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(\"div\", {\n                className: \"container col-md-4 offset-md-4 pb-5\",\n                __source: {\n                    fileName: \"/Users/goutham/Projects/lms/client/pages/register.js\",\n                    lineNumber: 24,\n                    columnNumber: 7\n                },\n                __self: undefined,\n                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(\"form\", {\n                    onSubmit: handleSubmit,\n                    __source: {\n                        fileName: \"/Users/goutham/Projects/lms/client/pages/register.js\",\n                        lineNumber: 25,\n                        columnNumber: 9\n                    },\n                    __self: undefined,\n                    children: [\n                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(\"input\", {\n                            type: \"text\",\n                            className: \"form-control mb-4 p-4\",\n                            value: name,\n                            onChange: (e)=>setName(e.target.value)\n                            ,\n                            placeholder: \"Enter name\",\n                            required: true,\n                            __source: {\n                                fileName: \"/Users/goutham/Projects/lms/client/pages/register.js\",\n                                lineNumber: 26,\n                                columnNumber: 11\n                            },\n                            __self: undefined\n                        }),\n                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(\"input\", {\n                            type: \"email\",\n                            className: \"form-control mb-4 p-4\",\n                            value: email,\n                            onChange: (e)=>setEmail(e.target.value)\n                            ,\n                            placeholder: \"Enter email\",\n                            required: true,\n                            __source: {\n                                fileName: \"/Users/goutham/Projects/lms/client/pages/register.js\",\n                                lineNumber: 35,\n                                columnNumber: 11\n                            },\n                            __self: undefined\n                        }),\n                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(\"input\", {\n                            type: \"password\",\n                            className: \"form-control mb-4 p-4\",\n                            value: password,\n                            onChange: (e)=>setPassword(e.target.value)\n                            ,\n                            placeholder: \"Enter password\",\n                            required: true,\n                            __source: {\n                                fileName: \"/Users/goutham/Projects/lms/client/pages/register.js\",\n                                lineNumber: 44,\n                                columnNumber: 11\n                            },\n                            __self: undefined\n                        }),\n                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(\"button\", {\n                            type: \"submit\",\n                            className: \"btn btn-block btn-primary\",\n                            __source: {\n                                fileName: \"/Users/goutham/Projects/lms/client/pages/register.js\",\n                                lineNumber: 53,\n                                columnNumber: 11\n                            },\n                            __self: undefined,\n                            children: \"Submit\"\n                        })\n                    ]\n                })\n            })\n        ]\n    }));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Register);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9yZWdpc3Rlci5qcy5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7OztBQUFnQztBQUNQO0FBRXpCLEtBQUssQ0FBQ0UsUUFBUSxPQUFTLENBQUM7SUFDdEIsS0FBSyxNQUFFQyxJQUFJLE1BQUVDLE9BQU8sTUFBSUosK0NBQVEsQ0FBQyxDQUFNO0lBQ3ZDLEtBQUssTUFBRUssS0FBSyxNQUFFQyxRQUFRLE1BQUlOLCtDQUFRLENBQUMsQ0FBZ0I7SUFDbkQsS0FBSyxNQUFFTyxRQUFRLE1BQUVDLFdBQVcsTUFBSVIsK0NBQVEsQ0FBQyxDQUFRO0lBRWpELEtBQUssQ0FBQ1MsWUFBWSxVQUFVQyxDQUFDLEdBQUssQ0FBQztRQUNqQ0EsQ0FBQyxDQUFDQyxjQUFjO1FBQ2hCLEVBQTRDO1FBQzVDLEtBQUssQ0FBQyxDQUFDLENBQUNDLElBQUksRUFBQyxDQUFDLEdBQUcsS0FBSyxDQUFDWCxpREFBVSxFQUFFLGtDQUFrQyxHQUFHLENBQUM7WUFDdkVFLElBQUk7WUFDSkUsS0FBSztZQUNMRSxRQUFRO1FBQ1YsQ0FBQztRQUNETyxPQUFPLENBQUNDLEdBQUcsQ0FBQyxDQUFtQixvQkFBRUgsSUFBSTtJQUN2QyxDQUFDO0lBRUQsTUFBTTs7aUZBRURJLENBQUU7Z0JBQUNDLFNBQVMsRUFBQyxDQUF5Qzs7Ozs7OzswQkFBQyxDQUFROztpRkFFL0RDLENBQUc7Z0JBQUNELFNBQVMsRUFBQyxDQUFxQzs7Ozs7OztnR0FDakRFLENBQUk7b0JBQUNDLFFBQVEsRUFBRVgsWUFBWTs7Ozs7Ozs7NkZBQ3pCWSxDQUFLOzRCQUNKQyxJQUFJLEVBQUMsQ0FBTTs0QkFDWEwsU0FBUyxFQUFDLENBQXVCOzRCQUNqQ00sS0FBSyxFQUFFcEIsSUFBSTs0QkFDWHFCLFFBQVEsR0FBR2QsQ0FBQyxHQUFLTixPQUFPLENBQUNNLENBQUMsQ0FBQ2UsTUFBTSxDQUFDRixLQUFLOzs0QkFDdkNHLFdBQVcsRUFBQyxDQUFZOzRCQUN4QkMsUUFBUTs7Ozs7Ozs7NkZBR1ROLENBQUs7NEJBQ0pDLElBQUksRUFBQyxDQUFPOzRCQUNaTCxTQUFTLEVBQUMsQ0FBdUI7NEJBQ2pDTSxLQUFLLEVBQUVsQixLQUFLOzRCQUNabUIsUUFBUSxHQUFHZCxDQUFDLEdBQUtKLFFBQVEsQ0FBQ0ksQ0FBQyxDQUFDZSxNQUFNLENBQUNGLEtBQUs7OzRCQUN4Q0csV0FBVyxFQUFDLENBQWE7NEJBQ3pCQyxRQUFROzs7Ozs7Ozs2RkFHVE4sQ0FBSzs0QkFDSkMsSUFBSSxFQUFDLENBQVU7NEJBQ2ZMLFNBQVMsRUFBQyxDQUF1Qjs0QkFDakNNLEtBQUssRUFBRWhCLFFBQVE7NEJBQ2ZpQixRQUFRLEdBQUdkLENBQUMsR0FBS0YsV0FBVyxDQUFDRSxDQUFDLENBQUNlLE1BQU0sQ0FBQ0YsS0FBSzs7NEJBQzNDRyxXQUFXLEVBQUMsQ0FBZ0I7NEJBQzVCQyxRQUFROzs7Ozs7Ozs2RkFHVEMsQ0FBTTs0QkFBQ04sSUFBSSxFQUFDLENBQVE7NEJBQUNMLFNBQVMsRUFBQyxDQUEyQjs7Ozs7OztzQ0FBQyxDQUU1RDs7Ozs7OztBQUtWLENBQUM7QUFFRCxpRUFBZWYsUUFBUSxFQUFDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vY2xpZW50Ly4vcGFnZXMvcmVnaXN0ZXIuanM/YTA5NyJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyB1c2VTdGF0ZSB9IGZyb20gXCJyZWFjdFwiO1xuaW1wb3J0IGF4aW9zIGZyb20gXCJheGlvc1wiO1xuXG5jb25zdCBSZWdpc3RlciA9ICgpID0+IHtcbiAgY29uc3QgW25hbWUsIHNldE5hbWVdID0gdXNlU3RhdGUoXCJSeWFuXCIpO1xuICBjb25zdCBbZW1haWwsIHNldEVtYWlsXSA9IHVzZVN0YXRlKFwicnlhbkBnbWFpbC5jb21cIik7XG4gIGNvbnN0IFtwYXNzd29yZCwgc2V0UGFzc3dvcmRdID0gdXNlU3RhdGUoXCJycnJycnJcIik7XG5cbiAgY29uc3QgaGFuZGxlU3VibWl0ID0gYXN5bmMgKGUpID0+IHtcbiAgICBlLnByZXZlbnREZWZhdWx0KCk7XG4gICAgLy8gY29uc29sZS50YWJsZSh7IG5hbWUsIGVtYWlsLCBwYXNzd29yZCB9KTtcbiAgICBjb25zdCB7IGRhdGEgfSA9IGF3YWl0IGF4aW9zLnBvc3QoYGh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9hcGkvcmVnaXN0ZXJgLCB7XG4gICAgICBuYW1lLFxuICAgICAgZW1haWwsXG4gICAgICBwYXNzd29yZCxcbiAgICB9KTtcbiAgICBjb25zb2xlLmxvZyhcIlJFR0lTVEVSIFJFU1BPTlNFXCIsIGRhdGEpO1xuICB9O1xuXG4gIHJldHVybiAoXG4gICAgPD5cbiAgICAgIDxoMSBjbGFzc05hbWU9XCJqdW1ib3Ryb24gdGV4dC1jZW50ZXIgYmctcHJpbWFyeSBzcXVhcmVcIj5SZWdpc3RlcjwvaDE+XG5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29udGFpbmVyIGNvbC1tZC00IG9mZnNldC1tZC00IHBiLTVcIj5cbiAgICAgICAgPGZvcm0gb25TdWJtaXQ9e2hhbmRsZVN1Ym1pdH0+XG4gICAgICAgICAgPGlucHV0XG4gICAgICAgICAgICB0eXBlPVwidGV4dFwiXG4gICAgICAgICAgICBjbGFzc05hbWU9XCJmb3JtLWNvbnRyb2wgbWItNCBwLTRcIlxuICAgICAgICAgICAgdmFsdWU9e25hbWV9XG4gICAgICAgICAgICBvbkNoYW5nZT17KGUpID0+IHNldE5hbWUoZS50YXJnZXQudmFsdWUpfVxuICAgICAgICAgICAgcGxhY2Vob2xkZXI9XCJFbnRlciBuYW1lXCJcbiAgICAgICAgICAgIHJlcXVpcmVkXG4gICAgICAgICAgLz5cblxuICAgICAgICAgIDxpbnB1dFxuICAgICAgICAgICAgdHlwZT1cImVtYWlsXCJcbiAgICAgICAgICAgIGNsYXNzTmFtZT1cImZvcm0tY29udHJvbCBtYi00IHAtNFwiXG4gICAgICAgICAgICB2YWx1ZT17ZW1haWx9XG4gICAgICAgICAgICBvbkNoYW5nZT17KGUpID0+IHNldEVtYWlsKGUudGFyZ2V0LnZhbHVlKX1cbiAgICAgICAgICAgIHBsYWNlaG9sZGVyPVwiRW50ZXIgZW1haWxcIlxuICAgICAgICAgICAgcmVxdWlyZWRcbiAgICAgICAgICAvPlxuXG4gICAgICAgICAgPGlucHV0XG4gICAgICAgICAgICB0eXBlPVwicGFzc3dvcmRcIlxuICAgICAgICAgICAgY2xhc3NOYW1lPVwiZm9ybS1jb250cm9sIG1iLTQgcC00XCJcbiAgICAgICAgICAgIHZhbHVlPXtwYXNzd29yZH1cbiAgICAgICAgICAgIG9uQ2hhbmdlPXsoZSkgPT4gc2V0UGFzc3dvcmQoZS50YXJnZXQudmFsdWUpfVxuICAgICAgICAgICAgcGxhY2Vob2xkZXI9XCJFbnRlciBwYXNzd29yZFwiXG4gICAgICAgICAgICByZXF1aXJlZFxuICAgICAgICAgIC8+XG5cbiAgICAgICAgICA8YnV0dG9uIHR5cGU9XCJzdWJtaXRcIiBjbGFzc05hbWU9XCJidG4gYnRuLWJsb2NrIGJ0bi1wcmltYXJ5XCI+XG4gICAgICAgICAgICBTdWJtaXRcbiAgICAgICAgICA8L2J1dHRvbj5cbiAgICAgICAgPC9mb3JtPlxuICAgICAgPC9kaXY+XG4gICAgPC8+XG4gICk7XG59O1xuXG5leHBvcnQgZGVmYXVsdCBSZWdpc3RlcjtcbiJdLCJuYW1lcyI6WyJ1c2VTdGF0ZSIsImF4aW9zIiwiUmVnaXN0ZXIiLCJuYW1lIiwic2V0TmFtZSIsImVtYWlsIiwic2V0RW1haWwiLCJwYXNzd29yZCIsInNldFBhc3N3b3JkIiwiaGFuZGxlU3VibWl0IiwiZSIsInByZXZlbnREZWZhdWx0IiwiZGF0YSIsInBvc3QiLCJjb25zb2xlIiwibG9nIiwiaDEiLCJjbGFzc05hbWUiLCJkaXYiLCJmb3JtIiwib25TdWJtaXQiLCJpbnB1dCIsInR5cGUiLCJ2YWx1ZSIsIm9uQ2hhbmdlIiwidGFyZ2V0IiwicGxhY2Vob2xkZXIiLCJyZXF1aXJlZCIsImJ1dHRvbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./pages/register.js\n");
+
+/***/ }),
+
+/***/ "axios":
+/*!************************!*\
+  !*** external "axios" ***!
+  \************************/
+/***/ ((module) => {
+
+module.exports = require("axios");
+
+/***/ }),
+
+/***/ "react":
+/*!************************!*\
+  !*** external "react" ***!
+  \************************/
+/***/ ((module) => {
+
+module.exports = require("react");
+
+/***/ }),
+
+/***/ "react/jsx-runtime":
+/*!************************************!*\
+  !*** external "react/jsx-runtime" ***!
+  \************************************/
+/***/ ((module) => {
+
+module.exports = require("react/jsx-runtime");
+
+/***/ })
+
+};
+;
+
+// load runtime
+var __webpack_require__ = require("../webpack-runtime.js");
+__webpack_require__.C(exports);
+var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
+var __webpack_exports__ = (__webpack_exec__("./pages/register.js"));
+module.exports = __webpack_exports__;
+
+})();
